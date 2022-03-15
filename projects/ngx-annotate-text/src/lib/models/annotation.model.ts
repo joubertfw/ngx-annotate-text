@@ -22,10 +22,11 @@ export class Annotation implements IAnnotation, ISelection {
      * @param label Arbitrary string displayed as label below the annotation, e. g. `City`.
      * @param color The color of the box which is displayed around the annotation, e. g. 'red' or 'rgb(220, 53, 69)'.
      */
-    constructor(startIndex: number, endIndex: number, label: string, color: string) {
+    constructor(startIndex: number, endIndex: number, label: string, color: string, text: string) {
         this.startIndex = startIndex;
         this.endIndex = endIndex;
         this.label = label;
         this.color = color;
+        this.text = text;
     }
 }
